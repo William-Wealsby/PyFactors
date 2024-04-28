@@ -32,7 +32,7 @@ if __name__ == '__main__':
     
     if not exists('primes.json'):
         with open('primes.json','w') as file:
-            file.write('[]')
+            file.write('[2,3,5,7]')
 
     with open('primes.json','r') as file:
         primes = loads(file.read())
